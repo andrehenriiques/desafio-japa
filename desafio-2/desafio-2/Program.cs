@@ -78,7 +78,9 @@ app.MapGet("/viaCep", (string cep) =>
 
     var dateNow = DateTime.Now.ToUniversalTime();
     var dateLong = DateTime.Now.AddDays(45).ToUniversalTime();
-    Console.WriteLine(dateLong.Ticks - dateNow.Ticks);
+    TimeSpan difference = dateLong - dateNow;
+    double totalSeconds = difference.TotalSeconds;
+    Console.WriteLine(totalSeconds);
 #endregion
 
 
