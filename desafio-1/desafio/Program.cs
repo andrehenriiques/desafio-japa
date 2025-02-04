@@ -12,17 +12,16 @@ Console.WriteLine("------------");
 
 #region 2
 
-var charArray = valueStart.ToList();
-var index = valueStart.IndexOf('P');
-Console.WriteLine("o P está no index " + index);
+var index = valueStart?.IndexOf("PTX");
+Console.WriteLine("o PTX começa no index " + index);
 var findArray = new List<char>();
 
-for (var i = 0; i < charArray.Count; i++)
+for (var i = 0; i < valueStart.Length; i++)
 {
     if (i != index)
     {
-        findArray.Add(charArray[i]);
-        Console.WriteLine(charArray[i]);
+        findArray.Add(valueStart[i]);
+        Console.WriteLine(valueStart[i]);
     }
 }
 var index2 = valueStart.IndexOf('X');
@@ -41,7 +40,7 @@ foreach (var element in orderedEnumerable)
 Console.WriteLine("------------");
 
 var filterList = new List<char>();
-foreach (var find in findArray.Select(element => charArray.First(c => c == element)))
+foreach (var find in findArray.Select(element => valueStart.First(c => c == element)))
 {
     filterList.Add(find);
     Console.WriteLine(find);
@@ -51,14 +50,20 @@ Console.WriteLine("------------");
 
 
 #region 4
-    var stringInteiro = "5";
-    var inteiro = 0;
+    const string stringInteiro = "5";
+    int inteiro = 0;
     Console.WriteLine(int.TryParse(stringInteiro, out inteiro) ? "é inteiro" : "não é inteiro, não é possível converter");
 
-    var stringInteiroDois = "3,14";
+    double doubleDois = 3.14d;
+    float floatDois = 3.14f;
+    decimal decimalDois = 3.14m;
+
+    const string stringInteiroDois = "3,14";
+    const string stringDoubleDois = "3,14";
+    const string stringFloatDois = "3,14";
     Console.WriteLine(decimal.TryParse(stringInteiroDois,out _) ? "é decimal" : "não é decimal, não é possível converter");
-    Console.WriteLine(double.TryParse(stringInteiroDois,out _) ? "é double" : "não é double, não é possível converter");
-    Console.WriteLine(float.TryParse(stringInteiroDois,out _) ? "é float" : "não é float, não é possível converter");
+    Console.WriteLine(double.TryParse(stringDoubleDois,out _) ? "é double" : "não é double, não é possível converter");
+    Console.WriteLine(float.TryParse(stringFloatDois,out _) ? "é float" : "não é float, não é possível converter");
     Console.WriteLine("------------");
 #endregion
 

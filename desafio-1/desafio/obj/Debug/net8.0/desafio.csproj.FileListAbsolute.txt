@@ -26,3 +26,4 @@
 /Users/andrehenriiques/Documents/projetos/desafio/desafio-1/desafio/obj/Debug/net8.0/desafio.pdb
 /Users/andrehenriiques/Documents/projetos/desafio/desafio-1/desafio/obj/Debug/net8.0/desafio.genruntimeconfig.cache
 /Users/andrehenriiques/Documents/projetos/desafio/desafio-1/desafio/obj/Debug/net8.0/ref/desafio.dll
+/Users/andrehenriiques/Documents/projetos/desafio/desafio-1/desafio/obj/Debug/net8.0/desafio.sourcelink.json
