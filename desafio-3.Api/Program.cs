@@ -20,6 +20,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseRouting(); 
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();  // Mapear os controladores
+});
 
 app.Run();
  
