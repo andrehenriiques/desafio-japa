@@ -34,4 +34,4 @@
 /Users/andrehenriiques/Documents/projetos/desafio/desafio-2/desafio-2/obj/Debug/net8.0/desafio-2.genruntimeconfig.cache
 /Users/andrehenriiques/Documents/projetos/desafio/desafio-2/desafio-2/obj/Debug/net8.0/ref/desafio-2.dll
 /Users/andrehenriiques/Documents/projetos/desafio/desafio-2/desafio-2/bin/Debug/net8.0/AutoMapper.dll
-/Users/andrehenriiques/Documents/projetos/desafio/desafio-2/desafio-2/bin/Debug/net8.0/RestClient.dll
+/Users/andrehenriiques/Documents/projetos/desafio/desafio-2/desafio-2/bin/Debug/net8.0/RestSharp.dll

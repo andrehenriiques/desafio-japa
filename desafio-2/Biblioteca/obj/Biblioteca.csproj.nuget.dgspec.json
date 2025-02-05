@@ -119,9 +119,9 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
-            "RestClient": {
+            "RestSharp": {
               "target": "Package",
-              "version": "[3.1024.23771, )"
+              "version": "[112.1.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
