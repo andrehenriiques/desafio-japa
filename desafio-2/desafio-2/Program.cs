@@ -79,19 +79,8 @@ var client3 = new RestClient("https://pokeapi.co/api/v2/berry/1");
 var request = new RestRequest();
 
 var response2 =  client3.Execute<PokemonDto>(request);
+Console.WriteLine(response2.Content);
 
-
-if (response2.Content != null)
-{
-    var value = JsonConvert.DeserializeObject<PokemonDto>(response2.Content, new JsonSerializerSettings
-    {
-        ContractResolver = new DefaultContractResolver
-        {
-            NamingStrategy = new SnakeCaseNamingStrategy()
-        }
-    });
-    Console.WriteLine(JsonConvert.SerializeObject(value));
-}
 
 #endregion
 
@@ -102,18 +91,7 @@ if (response2.Content != null)
 
     var response =  client2.Execute<ViaCepDto>(request);
 
-
-    if (response.Content != null)
-    {
-        var value = JsonConvert.DeserializeObject<ViaCepDto>(response.Content, new JsonSerializerSettings
-        {
-            ContractResolver = new DefaultContractResolver
-            {
-                NamingStrategy = new SnakeCaseNamingStrategy()
-            }
-        });
-        Console.WriteLine(JsonConvert.SerializeObject(value));
-    }
+    Console.WriteLine(response.Content);
 
     #endregion
 
