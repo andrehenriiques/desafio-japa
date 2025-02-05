@@ -1,0 +1,38 @@
+//Criar um novo Projeto/Solution com nome Tarefa3.Api 
+//utilizando web api  -  referencia: https://media.discordapp.net/attachments/691997846039166998/1288850380024975401/image.png?ex=66f6aef4&is=66f55d74&hm=301f59e80c2a256fc132cb1c449f8dd7dac483bc08cc24b0acacaed984f38937&=&format=webp&quality=lossless
+ 
+ 
+//Criar um novo Controlador com nome no padrão  NomeController.cs este controlador devera ter uma rota geral usando o nome do proprio controlador
+//(a nivel da classe do controlador vc pode adicionar uma annotation)
+ 
+ 
+//Criar um novo projeto na mesma solution chamando-o de Tarefa3.Domain
+//Crie uma pasta Models e adicione um novo arquivo com o nome Person.cs
+//Crie um novo arquivo chamado PersonAddress.cs
+//coloque dados uteis referente ao modelos criados
+ 
+ 
+//Criar um novo projeto chamado Tarefa3.Application
+//Criar uma nova pasta chamada Services
+//Criar um novo arquivo chamado PersonService.cs
+ 
+ 
+//criar uma nova pasta chamada Interfaces dentro do Tarefa3.Domain , dentro dessa pasta crie uma outra chamando de Service
+//e dentro dela crie um arquivo chamado IPersonService.cs, este será uma interface (public interface)
+ 
+ 
+//Na camada de aplicação e servico ( Application ) extenda a classe PersonService com a interface IPersonService, para que ela utilize os metodos futuros que serão criados
+ 
+ 
+//Na camada Tarefa3.Api, faça a injeção de dependencia do PersonService  E IPersonService, usando injeção Transient
+ 
+//Crie no Person Service, um metodo chamado GetAll() que retorne uma lista de pessoas (List<Person>)    
+ 
+//Na interface, declare essa assinatura do metodo(GetAll()) (aqui na inteface nao vai a logica, vc fala o dado de entrada e de saida declarado, assim todas classes que extendem a interface
+//devem implementar esse metodo)
+ 
+//Na camada de Tarefa3.Api, no controlador criado, adicione um construtor que receba um IPersonService
+//Crie uma Action , com o metodo HttpGet com a rota dessa action sendo GetAll e utilize o metodo GetAll() do person service para retornar uma lista de pessoas
+ 
+ 
+//Entenda as diferenças nos protocolos Http (GET,POST, PUT,DELETE) e como eles se relacionam com as operações CRUD(Create,Read,Update,Delete)
